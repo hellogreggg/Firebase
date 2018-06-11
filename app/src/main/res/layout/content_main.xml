@@ -9,23 +9,39 @@
     tools:showIn="@layout/app_bar_main">
 
 
-    <Button
-        android:id="@+id/loginBtn"
-        android:layout_width="124dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
-        android:text="login"
+    <TextView
+        android:id="@+id/usernameView"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Username"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/regiBtn"
+        android:id="@+id/uploadBTN"
         android:layout_width="wrap_content"
-        android:layout_height="49dp"
-        android:layout_marginTop="132dp"
-        android:text="Registration"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Upload Music"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/btnChoose" />
+
+    <Button
+        android:id="@+id/btnChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Choose Music"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameView" />
+
 </android.support.constraint.ConstraintLayout>
